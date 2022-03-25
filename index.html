@@ -27,6 +27,11 @@
 
                 })
             })
+
+            Pasta.addActivityListener(function(activity) {
+                console.log("Got some activity to send to Elm big shoots:", activity);
+                app.ports.activityChanges.send(activity);
+            })
         </script>
     </body>
     <script>
