@@ -6285,7 +6285,7 @@ var $author$project$PhotoGroove$initialCmd = $elm$http$Http$get(
 			$elm$http$Http$expectJson,
 			$author$project$PhotoGroove$GotPhotos,
 			$elm$json$Json$Decode$list($author$project$PhotoGroove$photoDecoder)),
-		url: 'http://elm-in-action.com/photos/list.json'
+		url: 'https://elm-in-action.com/photos/list.json'
 	});
 var $author$project$PhotoGroove$Loading = {$: 'Loading'};
 var $author$project$PhotoGroove$Medium = {$: 'Medium'};
@@ -6354,7 +6354,7 @@ var $author$project$PhotoGroove$setFilters = _Platform_outgoingPort(
 					$elm$json$Json$Encode$string($.url))
 				]));
 	});
-var $author$project$PhotoGroove$urlPrefix = 'http://elm-in-action.com/';
+var $author$project$PhotoGroove$urlPrefix = 'https://elm-in-action.com/';
 var $author$project$PhotoGroove$applyFilters = function (model) {
 	var _v0 = model.status;
 	switch (_v0.$) {

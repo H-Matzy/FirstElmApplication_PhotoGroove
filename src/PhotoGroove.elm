@@ -136,7 +136,7 @@ viewLoaded photos selectedUrl model =
 
 urlPrefix : String
 urlPrefix =
-    "http://elm-in-action.com/"
+    "https://elm-in-action.com/"
 
 
 viewThumbnail : String -> Photo -> Html Msg
@@ -280,7 +280,7 @@ initialModel =
 initialCmd : Cmd Msg
 initialCmd =
     Http.get
-        { url = "http://elm-in-action.com/photos/list.json"
+        { url = "https://elm-in-action.com/photos/list.json"
         , expect = Http.expectJson GotPhotos (Json.Decode.list photoDecoder)
         }
 
