@@ -1,4 +1,4 @@
-port module PhotoGroove exposing (main)
+port module PhotoGallery exposing (Model, Msg(..), Photo, Status(..), init, initialModel, main, photoDecoder, subscriptions, update, urlPrefix, view)
 
 import Browser exposing (..)
 import Html exposing (..)
@@ -231,7 +231,7 @@ update msg model =
             ( { model | status = Errored "Server error!" }, Cmd.none )
 
         SlidHue hue ->
-            applyFilters { model | hue = hue }
+            applyFilters { model | hue = Debug.log "model hue" hue }
 
         SlidRipple ripple ->
             applyFilters { model | ripple = ripple }
